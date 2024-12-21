@@ -6,7 +6,7 @@ int main()
     int score=0;
     cout << "\t\t\t***** Welcopme Quiz Application *****"<<endl;
     string a;
-    cout << "type araf and then press enter to start;"<<endl;
+    cout << "type Mayur and then press enter to start;"<<endl;
     cin >> a;
     cout << "Question 1:" << endl << "What is the sum of 40 and 60? "<<endl << endl;
     cin >> input1;
@@ -65,7 +65,7 @@ int main()
         score = score;
     }
 
-    cout << "NICE Your score is "<<score;
+    cout << "NICE. Your score is "<<score;
 
     
 }
