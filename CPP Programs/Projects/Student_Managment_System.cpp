@@ -12,9 +12,11 @@ struct student {
 void inputData(student st[]) {
     st[num].id = num;
     cout << "Enter your Name : " ;
-    cin >> st[num].name;
+    cin.ignore();
+    getline(cin,st[num].name);
     cout << "Enter your Department : " ;
-    cin >> st[num].dept;
+    cin.ignore();
+	getline(cin,st[num].dept);
     st[num].id++;
     cout << "Your Id is " << st[num].id << endl;
     cout  << endl;
@@ -62,9 +64,11 @@ void updateData() {
         if (st[i].id == id) {
             cout << "Data Founded " << endl;
             cout << "Enter a Name " << endl;
-            cin >> st[id-1].name;
+            cin.ignore();
+            getline(cin,st[id-1].name);
             cout << "Enter Department " << endl;
-            cin >> st[id-1].dept;
+            cin.ignore();
+            getline(cin,st[id-1].dept);
             cout << "Data Updated Successfully" << endl;
         }
         else {
